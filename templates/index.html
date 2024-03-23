@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Calculator</h2>
+        <form action="/calculate" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="num1" placeholder="Enter first number" required>
+            </div>
+            <div class="form-group">
+                <select class="form-control" name="operation" required>
+                    <option value="add">+</option>
+                    <option value="subtract">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="num2" placeholder="Enter second number" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
